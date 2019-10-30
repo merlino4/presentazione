@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="pool.css">
+  </head>
+
+  <body>
+    <div id="app">This is the app body</div>
+
+    <div class="main">
+      <p class="firstPar">I am a paragraph</p>
+      <p>I am a second paragraph</p>
+      <input type="text" name="customer_name" placeholder="I'm an input" />
+
+      <table
+        class="mainTable"
+        style="background: white;"
+        data-attribute="dataset attribute"
+        id="tableId"
+      >
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Gianfranco</td>
+          <td>Funari</td>
+          <td>99</td>
+        </tr>
+        <tr onclick="toggleRow(event, this)">
+          <td>Maccio</td>
+          <td id="capatonda">Capatonda</td>
+          <td onclick="updateAge(event)">43</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="pool.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.ball,
+.stick {
+  position: absolute;
+  z-index: 10;
+}
+.table {
+  width: 500px;
+}
+.stick {
+  width: 400px;
+}
+.ball {
+  width: 23px;
+}
